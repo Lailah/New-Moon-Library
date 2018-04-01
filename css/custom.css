@@ -15,6 +15,16 @@ body {
     margin-bottom: 60px;
 }
 
+/* Image on top */
+.bookitem {
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* First header */
 .top {
     line-height: 3em;
     text-align: left;
@@ -24,13 +34,23 @@ body {
     vertical-align: baseline;
 }
 
+/* Navigation bar */
+.headindex {
+    vertical-align: text-top;
+    position: relative;
+    bottom: 20px;
+    text-align: left;
+}
+
+/* Header for the table or list of books */
 .fancyheader {
     background-color:  #ffffb3 !important;
     font-family:  Comfortaa, sans-serif !important;
     color: #009900 !important;
-    margin-right: 20px !important;
+    margin-left: 20px !important;
     vertical-align: middle !important;
     bottom: 20px !important;
+    top: 20px;
 }
 
 .footer {
