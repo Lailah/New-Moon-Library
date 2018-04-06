@@ -2,9 +2,38 @@
  * Any custom CSS goes here so its available in the final Application
  */
 
+
+/**
+ * Fonts
+ */
+
+
+/** Alex Brush, SIL License (https://www.fontsquirrel.com/fonts/alex-brush) */
+
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('../fonts/AlexBrush.ttf');
+}
+
+
+/** Comfortaa, SIL License (https://www.fontsquirrel.com/fonts/comfortaa) */
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa_Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa_Bold.ttf');
+    font-weight: bold;
+}
+
+
 /**
  * Sticky footer
  */
+
 html {
     position: relative;
     min-height: 100%;
@@ -15,7 +44,26 @@ body {
     margin-bottom: 60px;
 }
 
+
+/* Navbar branding/overrides */
+
+.nav-brand-override {
+    font-family: 'Alex Brush', cursive !important;
+    color: rgb(255, 0, 102) !important;
+    font-size: 40px !important;
+    margin-right: 65px;
+}
+
+.nav-brand-img-override {
+    height: 50px;
+    width: auto;
+    padding-right: 20px;
+    position: relative;
+}
+
+
 /* Image on top */
+
 .bookitem {
     position: relative;
     top: 10px;
@@ -24,33 +72,25 @@ body {
     margin-right: 10px;
 }
 
+
 /* First header */
+
 .top {
     line-height: 3em;
     text-align: left;
     color: #ff0066;
-    font-family: 'Alex Brush Regular', cursive, !important;
     font-size: 26px !important;
     vertical-align: baseline;
 }
 
+
 /* Navigation bar */
+
 .headindex {
     vertical-align: text-top;
-    position: relative;
+    position: relative !important;
     bottom: 20px;
     text-align: left;
-}
-
-/* Header for the table or list of books */
-.fancyheader {
-    background-color:  #ffffb3 !important;
-    font-family:  Comfortaa, sans-serif !important;
-    color: #009900 !important;
-    margin-left: 20px !important;
-    vertical-align: middle !important;
-    bottom: 20px !important;
-    top: 20px;
 }
 
 .footer {
@@ -59,10 +99,7 @@ body {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 60px;
+    /* Vertically center the text there */
     background-color: #f5f5f5;
-} 
-@font-face {
-    font-family: 'Alex Brush Regular';
-    src: url('fonts/AlexBrush.ttf');
 }

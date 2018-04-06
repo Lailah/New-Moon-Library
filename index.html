@@ -11,34 +11,48 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css" media="all"/>
 </head>
 <body>
-    
-<!-- Main Header -->    
-<header>
-    <h1 class="bookitem">
-        <img src="imgs/teabooks.jpg" alt="Books & a cuppa" />
-    </h1>
-    <h1 class="top h1" >New Moon Library</h1>
-    <nav>
-    <h4 class="headindex h5"><a href="home.html">Home</a>
-                             <a href="about.html">About</a>
-                             <a href="contactus.html">Contact us</a>
-    </h4>
-    </nav>
-</header>
 
-<!-- Top Navigation Bar -->
-<nav class="fancyheader">
-    <a class="navbar-brand" href="#">List of books currently available</a>
+<!-- Main Header -->
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand nav-brand-override" href="#">
+        <img src="img/teabooks.jpg" class="nav-brand-img-override">
+        New Moon Library
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartottogglehere"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbartottogglehere">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active bg-light rounded border border-primary">
+                <a class="nav-link text-dark" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="contact-us.html">Contact us</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
-<br>
 
 <!-- Main Content -->
 <div class="container">
+    <br/>
+    <br/>
+
+    <div class="alert alert-primary text-center" role="alert">
+        List of books currently available
+    </div>
+
+    <br>
 
     <!-- Bootstrap Table -->
-    <table class="table table-bordered ">
-        <thead class="thead-dark">
+    <table class="table table-bordered">
+        <thead class="thead-light">
         <tr>
             <th>Title</th>
             <th>Author</th>
@@ -87,13 +101,13 @@
         </tr>
         </tbody>
     </table>
-    <br />
+    <br/>
 </div>
 
 <!-- Footer Bar -->
 <footer class="footer text-center bg-dark">
     <div class="container">
-        <span class="text-muted">New Moon Library Designed by Silvia Sanchez, <a href="mailto:bhkohane@gmail.com">bhkohane@gmail.com</a>  2018</span>
+        <span class="text-light">New Moon Library Designed by Silvia Sanchez, <a href="mailto:bhkohane@gmail.com">bhkohane@gmail.com</a>  2018</span>
     </div>
 </footer>
 
