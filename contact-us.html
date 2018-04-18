@@ -14,7 +14,8 @@
 
 <body>
     <!-- Main Header -->
-    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand nav-brand-override" href="#">
             <img src="img/teabooks.jpg" class="nav-brand-img-override"> New Moon Library
         </a>
@@ -24,8 +25,8 @@
 
         <div class="collapse navbar-collapse" id="navbartottogglehere">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active bg-light rounded border border-primary">
-                    <a class="nav-link text-dark" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-primary" href="list.html">List</a>
@@ -33,8 +34,8 @@
                 <li class="nav-item">
                     <a class="nav-link text-primary" href="about.html">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-primary" href="contact-us.html">Contact us</a>
+                <li class="nav-item active bg-light rounded border border-primary">
+                    <a class="nav-link text-dark" href="contact-us.html">Contact us <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -48,23 +49,53 @@
     <br />
     <br />
 
-    <!--Contact form-->
-    <form action="" method="POST">
-        <fieldset>
-            <legend>Please, fill the form</legend>
-            <label>Name <br />
-                <input type="text" name="user" /></label>
-            <br />
-            <label>Email <br />
-                <input type="text" name="email" /></label>
-            <br />
-            <p>Please, enter your comments below</p>
-            <textarea name="comments"></textarea>
-            <br />
-        </fieldset>
-        <input type="submit" name="send" value="Send" />
-    </form>
+    <!--Contact form Bootstrap-->
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-md-2">
+                <div class="well well-sm">
+                    <form action="/home/unicorn/Documents/Project/MoonLibrary/contact-us.html/submit" class="form-horizontal" action="" method="post">
+                        <fieldset>
+                            <legend class="text-center">Get in touch</legend>
 
+                            <!-- Name input-->
+                            <div class="form-group">
+                                <label class="col-3 control-label" for="name">Name</label>
+                                <div class="col-9">
+                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Email input-->
+                            <div class="form-group">
+                                <label class="col-3 control-label" for="email">E-mail</label>
+                                <div class="col-9">
+                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Message body -->
+                            <div class="form-group">
+                                <label class="col-3 control-label" for="message">Your message</label>
+                                <div class="col-9">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Form actions -->
+                            <div class="form-group">
+                                <div class="col-md-9 text-right">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
     <br />
     <br />
 
